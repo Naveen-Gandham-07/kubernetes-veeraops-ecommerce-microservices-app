@@ -723,23 +723,74 @@ const catalogs = {
       ["f8", "Classic Sunglasses", 999, "UV-protected sunglasses with a lightweight frame.", "sunglasses,accessory"]
     ]
   },
-  mobiles: {
-    title: "Mobiles",
-    eyebrow: "Mobile service",
-    intro: "Compare phones, watches, and mobile accessories with the same protected shopping flow used by the full platform.",
-    accent: "#2563eb",
-    hero: "https://tse1.mm.bing.net/th?q=Google%20Pixel%2010%20smartphone&w=760&h=520&c=7&rs=1&p=0&o=5&pid=1.7",
-    products: [
-      ["m1", "Pixel 10", 99800, "AI camera phone with bright display and fast charging.", "pixel,smartphone"],
-      ["m2", "Pixel Fold", 129999, "Foldable display phone for work, media, and multitasking.", "foldable,smartphone"],
-      ["m3", "Pixel 9a", 29999, "Value phone with clean Android and reliable camera.", "android,phone"],
-      ["m4", "Pixel Watch", 19999, "Smart wearable for fitness, calls, and daily reminders.", "smartwatch"],
-      ["m5", "Fast Charger 45W", 1799, "Compact USB-C charger for phones and tablets.", "phone,charger"],
-      ["m6", "Clear Case", 899, "Shock-resistant transparent case for daily protection.", "phone,case"],
-      ["m7", "Screen Guard Pack", 499, "Tempered glass protection with easy installation.", "screen,protector"],
-      ["m8", "Wireless Power Stand", 3499, "Desk charging stand for phones and earbuds.", "wireless,charger"]
-    ]
-  },
+ ```javascript
+mobiles: {
+  title: "Mobiles",
+  eyebrow: "Mobile Service",
+  intro: "Explore Google Pixel and Apple iPhone smartphones, smartwatches, and accessories.",
+  accent: "#2563eb",
+
+  hero: "https://tse1.mm.bing.net/th?q=Google%20Pixel%20and%20Apple%20iPhone&w=760&h=520&c=7&rs=1&p=0&o=5&pid=1.7",
+
+  // Two separate hero images
+  heroImages: [
+    {
+      title: "Google Pixel",
+      image: "https://tse1.mm.bing.net/th?q=Google%20Pixel%20smartphone&w=760&h=520"
+    },
+    {
+      title: "Apple iPhone",
+      image: "https://tse1.mm.bing.net/th?q=Apple%20iPhone%20smartphone&w=760&h=520"
+    }
+  ],
+
+  products: [
+    // Google Pixel Phones
+    ["m1", "Google Pixel 10", 99800, "AI camera phone with a bright display and fast charging.", "google,pixel,smartphone"],
+    ["m2", "Google Pixel Fold", 129999, "Foldable smartphone for work, media, and multitasking.", "google,foldable,smartphone"],
+    ["m3", "Google Pixel 9a", 29999, "Value smartphone with clean Android and a reliable camera.", "google,pixel,android"],
+    ["m4", "Google Pixel Watch", 19999, "Smartwatch for fitness, notifications, and daily reminders.", "google,smartwatch"],
+
+    // Apple iPhone 18 Series — placeholder prices
+    ["m5", "iPhone 18", 82900, "Placeholder listing for the next-generation iPhone.", "apple,iphone"],
+    ["m6", "iPhone 18 Pro", 119900, "Placeholder listing for a premium iPhone.", "apple,iphone,pro"],
+    ["m7", "iPhone 18 Pro Max", 139900, "Placeholder listing for a large premium iPhone.", "apple,iphone,max"],
+
+    // Apple iPhone 17 Series
+    ["m8", "iPhone 17", 82900, "iPhone with advanced camera features and a bright display.", "apple,iphone"],
+    ["m9", "iPhone Air", 99900, "Slim iPhone with a lightweight design.", "apple,iphone,air"],
+    ["m10", "iPhone 17 Pro", 129900, "Premium iPhone with advanced photography features.", "apple,iphone,pro"],
+    ["m11", "iPhone 17 Pro Max", 149900, "Large premium iPhone with advanced camera capabilities.", "apple,iphone,max"],
+
+    // Apple iPhone 16 Series
+    ["m12", "iPhone 16", 69900, "Everyday iPhone with powerful performance.", "apple,iphone"],
+    ["m13", "iPhone 16 Plus", 79900, "Large-screen iPhone for videos and everyday use.", "apple,iphone,plus"],
+    ["m14", "iPhone 16 Pro", 109900, "Premium iPhone with Pro camera features.", "apple,iphone,pro"],
+    ["m15", "iPhone 16 Pro Max", 129900, "Large premium iPhone for photography and entertainment.", "apple,iphone,max"],
+    ["m16", "iPhone 16e", 59900, "Value-focused iPhone for everyday use.", "apple,iphone,budget"],
+
+    // Apple iPhone 15 Series
+    ["m17", "iPhone 15", 59900, "iPhone with Dynamic Island and USB-C connectivity.", "apple,iphone"],
+    ["m18", "iPhone 15 Plus", 69900, "Large-screen iPhone with dependable battery life.", "apple,iphone,plus"],
+    ["m19", "iPhone 15 Pro", 89900, "Premium iPhone with advanced camera features.", "apple,iphone,pro"],
+    ["m20", "iPhone 15 Pro Max", 109900, "Large Pro iPhone with advanced zoom photography.", "apple,iphone,max"],
+
+    // Apple iPhone 14 Series
+    ["m21", "iPhone 14", 49900, "iPhone with an OLED display and dual-camera system.", "apple,iphone"],
+    ["m22", "iPhone 14 Plus", 59900, "Large OLED display for entertainment.", "apple,iphone,plus"],
+    ["m23", "iPhone 14 Pro", 69900, "ProMotion display and advanced camera features.", "apple,iphone,pro"],
+    ["m24", "iPhone 14 Pro Max", 79900, "Large Pro display and advanced photography.", "apple,iphone,max"],
+
+    // Accessories
+    ["m25", "Google Pixel Fast Charger", 1799, "Compact USB-C charger for compatible devices.", "google,charger"],
+    ["m26", "Apple USB-C Power Adapter", 1900, "Power adapter for compatible Apple devices.", "apple,charger"],
+    ["m27", "Clear Phone Case", 899, "Transparent protective case for compatible phones.", "phone,case"],
+    ["m28", "Screen Protector", 499, "Screen protection against everyday scratches.", "phone,screen"],
+    ["m29", "Wireless Charging Stand", 3499, "Convenient charging stand for compatible devices.", "wireless,charger"]
+  ]
+},
+```
+
   beauty: {
     title: "Beauty",
     eyebrow: "Beauty service",
