@@ -3,7 +3,7 @@
 resource "aws_db_instance" "rds" {
   allocated_storage      = 20
   identifier = "microservices-rds"
-  db_subnet_group_name   = aws_db_subnet_group.sub-grp.id
+  db_subnet_group_name   = aws_db_subnet_group.sub-grp.name
   engine                 = "mysql"
   engine_version         = "8.4.8"
   instance_class         = "db.t3.micro"
