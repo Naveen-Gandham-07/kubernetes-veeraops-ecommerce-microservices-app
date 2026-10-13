@@ -3,7 +3,7 @@
 resource "aws_db_instance" "rds" {
   allocated_storage      = 20
   identifier = "microservices-rds"
-  db_subnet_group_name   = aws_db_subnet_group.sub-grp.name
+  db_subnet_group_name   = aws_db_subnet_group.sub-grp
   engine                 = "mysql"
   engine_version         = "8.4.8"
   instance_class         = "db.t3.micro"
@@ -15,7 +15,7 @@ resource "aws_db_instance" "rds" {
   vpc_security_group_ids = [aws_security_group.allow_all.id]
   depends_on = [ aws_db_subnet_group.sub-grp ]
   publicly_accessible = false
-  backup_retention_period = 0
+ # backup_retention_period = 0
 
   
   tags = {
